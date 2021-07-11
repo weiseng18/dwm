@@ -116,7 +116,7 @@ static Key keys[] = {
 	/* TOGGLE between previous workspace */
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	/* KILL window */
-	{ MODKEY|ShiftMask|Ctrl_M,      XK_q,      killclient,     {0} },
+	{ MODKEY|ShiftMask,      XK_q,      killclient,     {0} },
 	/* SET tiled layout */
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	/* SET enable floating layout */
@@ -145,9 +145,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_q,                      3)
-	TAGKEYS(                        XK_w,                      4)
-	TAGKEYS(                        XK_e,                      5)
+	TAGKEYS(                        XK_w,                      3)
+	TAGKEYS(                        XK_e,                      4)
 	{ Hypr_M,             XK_q,      quit,           {0} },
 };
 
