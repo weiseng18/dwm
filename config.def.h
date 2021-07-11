@@ -84,7 +84,9 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
+
 #define ROFI SHCMD("~/.local/bin/rofi-run")
+#define SCREENSHOT SHCMD("~/.local/bin/screenshot")
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
@@ -128,7 +130,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	/* scripts */
-	{ Ctrl_M,             XK_space, spawn,         ROFI },
+	{ Ctrl_M,             XK_space, spawn,         ROFI       },	
+	{ 0,                  XK_Print, spawn,         SCREENSHOT },
 	/* CTRL + SHIFT + ALT + NUM */
 	/* allows viewing of the same window on another workspace */
 	/* toggle tag status */
