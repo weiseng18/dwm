@@ -111,7 +111,7 @@ static Key keys[] = {
 	/* TOGGLE between previous workspace */
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	/* KILL window */
-	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
+	{ MODKEY|ShiftMask|Ctrl_M,      XK_q,      killclient,     {0} },
 	/* SET tiled layout */
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	/* SET enable floating layout */
