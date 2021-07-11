@@ -133,7 +133,7 @@ static Key keys[] = {
 	/* scripts */
 	{ Ctrl_M,             XK_space, spawn,         ROFI       },	
 	{ 0,                  XK_Print, spawn,         SCREENSHOT },
-	{ ShiftMask,          XK_Print, spawn,         SCREENSHOT_CLIPBOARD },
+	{ Ctrl_M|ShiftMask,   XK_Print, spawn,         SCREENSHOT_CLIPBOARD },
 	/* CTRL + SHIFT + ALT + NUM */
 	/* allows viewing of the same window on another workspace */
 	/* toggle tag status */
