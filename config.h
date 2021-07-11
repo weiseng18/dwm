@@ -122,9 +122,9 @@ static Key keys[] = {
 	/* SET enable floating layout */
 	//{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	/* SET maximized layout */
-	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} },
+	//{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} },
 	/* TOGGLE maximized layout */
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
+	{ MODKEY,                       XK_m,  setlayout,      {0} },
 	//{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	/* VIEW all windows */
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
@@ -136,7 +136,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	/* scripts */
-	{ Ctrl_M,             XK_space, spawn,         ROFI       },	
+	{ MODKEY,             XK_space, spawn,         ROFI       },
 	{ 0,                  XK_Print, spawn,         SCREENSHOT },
 	{ Ctrl_M|ShiftMask,   XK_Print, spawn,         SCREENSHOT_CLIPBOARD },
 	/* CTRL + SHIFT + ALT + NUM */
