@@ -25,7 +25,7 @@ static const char *colors[][3]      = {
 
 /* tagging */
 // rename workspaces
-static const char *tags[] = { "1", "2", "3", "Q", "W", "E" };
+static const char *tags[] = { "1", "2", "3", "W", "E" };
 
 // rules fix window spawning location
 // disabled
