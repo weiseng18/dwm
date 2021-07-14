@@ -84,6 +84,18 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
+#define XK_F1 0xffbe
+#define XK_F2 0xffbf
+#define XK_F3 0xffc0
+#define XK_F4 0xffc1
+#define XK_F5 0xffc2
+#define XK_F6 0xffc3
+#define XK_F7 0xffc4
+#define XK_F8 0xffc5
+#define XK_F9 0xffc6
+#define XK_F10 0xffc7
+#define XK_F11 0xffc8
+#define XK_F12 0xffc9
 
 #define ROFI SHCMD("~/.local/bin/rofi-run")
 #define SCREENSHOT SHCMD("~/.local/bin/screenshot")
