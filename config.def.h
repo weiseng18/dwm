@@ -151,8 +151,8 @@ static Key keys[] = {
 	{ MODKEY,             XK_space, spawn,         ROFI       },
 	{ 0,                  XK_Print, spawn,         SCREENSHOT },
 	{ Ctrl_M|ShiftMask,   XK_Print, spawn,         SCREENSHOT_CLIPBOARD },
-	{ 0,                  XK_F11, spawn,         VOLUME_UP },
-	{ 0,                  XK_F12, spawn,         VOLUME_DOWN },
+	{ 0,                  XK_F11, spawn,         VOLUME_DOWN },
+	{ 0,                  XK_F12, spawn,         VOLUME_UP },
 	/* CTRL + SHIFT + ALT + NUM */
 	/* allows viewing of the same window on another workspace */
 	/* toggle tag status */
