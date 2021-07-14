@@ -100,6 +100,8 @@ static const Layout layouts[] = {
 #define ROFI SHCMD("~/.local/bin/rofi-run")
 #define SCREENSHOT SHCMD("~/.local/bin/screenshot")
 #define SCREENSHOT_CLIPBOARD SHCMD("~/.local/bin/screenshot-clipboard")
+#define VOLUME_UP SHCMD("~/.local/bin/volume-up")
+#define VOLUME_DOWN SHCMD("~/.local/bin/volume-down")
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
@@ -149,6 +151,8 @@ static Key keys[] = {
 	{ MODKEY,             XK_space, spawn,         ROFI       },
 	{ 0,                  XK_Print, spawn,         SCREENSHOT },
 	{ Ctrl_M|ShiftMask,   XK_Print, spawn,         SCREENSHOT_CLIPBOARD },
+	{ 0,                  XK_F11, spawn,         VOLUME_UP },
+	{ 0,                  XK_F12, spawn,         VOLUME_DOWN },
 	/* CTRL + SHIFT + ALT + NUM */
 	/* allows viewing of the same window on another workspace */
 	/* toggle tag status */
