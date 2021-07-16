@@ -97,6 +97,7 @@ static const Layout layouts[] = {
 #define XK_F11 0xffc8
 #define XK_F12 0xffc9
 
+#define NAUTILUS SHCMD("~/.local/bin/nautilus-run")
 #define ROFI SHCMD("~/.local/bin/rofi-run")
 #define SCREENSHOT SHCMD("~/.local/bin/screenshot")
 #define SCREENSHOT_CLIPBOARD SHCMD("~/.local/bin/screenshot-clipboard")
@@ -149,6 +150,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	/* scripts */
 	{ MODKEY,             XK_space, spawn,         ROFI       },
+	{ MODKEY,             XK_n,     spawn,         NAUTILUS   },
 	{ 0,                  XK_Print, spawn,         SCREENSHOT },
 	{ Ctrl_M|ShiftMask,   XK_Print, spawn,         SCREENSHOT_CLIPBOARD },
 	{ 0,                  XK_F11, spawn,         VOLUME_DOWN },
