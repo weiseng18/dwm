@@ -97,6 +97,8 @@ static const Layout layouts[] = {
 #define XK_F11 0xffc8
 #define XK_F12 0xffc9
 
+#define BRIGHTNESS_UP SHCMD("~/.local/bin/brightness-up")
+#define BRIGHTNESS_DOWN SHCMD("~/.local/bin/brightness-down")
 #define NAUTILUS SHCMD("~/.local/bin/nautilus-run")
 #define ROFI SHCMD("~/.local/bin/rofi-run")
 #define SCREENSHOT SHCMD("~/.local/bin/screenshot")
@@ -153,8 +155,10 @@ static Key keys[] = {
 	{ MODKEY,             XK_n,     spawn,         NAUTILUS   },
 	{ 0,                  XK_Print, spawn,         SCREENSHOT },
 	{ Ctrl_M|ShiftMask,   XK_Print, spawn,         SCREENSHOT_CLIPBOARD },
-	{ 0,                  XK_F11, spawn,         VOLUME_DOWN },
-	{ 0,                  XK_F12, spawn,         VOLUME_UP },
+	{ Ctrl_M,             XK_F5,    spawn,         BRIGHTNESS_DOWN },
+	{ Ctrl_M,             XK_F6,    spawn,         BRIGHTNESS_UP },
+	{ 0,                  XK_F11,   spawn,         VOLUME_DOWN },
+	{ 0,                  XK_F12,   spawn,         VOLUME_UP },
 	/* CTRL + SHIFT + ALT + NUM */
 	/* allows viewing of the same window on another workspace */
 	/* toggle tag status */
