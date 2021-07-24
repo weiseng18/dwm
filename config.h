@@ -99,6 +99,7 @@ static const Layout layouts[] = {
 
 #define BRIGHTNESS_UP SHCMD("~/.local/bin/brightness-up")
 #define BRIGHTNESS_DOWN SHCMD("~/.local/bin/brightness-down")
+#define LOCK SHCMD("~/.local/bin/lock")
 #define NAUTILUS SHCMD("~/.local/bin/nautilus-run")
 #define ROFI SHCMD("~/.local/bin/rofi-run")
 #define SCREENSHOT SHCMD("~/.local/bin/screenshot")
@@ -151,6 +152,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	/* scripts */
+	{ Ctrl_M|MODKEY,      XK_l,			spawn,         LOCK       },
 	{ MODKEY,             XK_space, spawn,         ROFI       },
 	{ MODKEY,             XK_n,     spawn,         NAUTILUS   },
 	{ 0,                  XK_Print, spawn,         SCREENSHOT },
