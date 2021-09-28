@@ -38,7 +38,7 @@ static const Rule rules[] = {
 	//{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	//{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ NULL,       NULL,       NULL,          0,          False,       -1 },
-	{ "Todoist",  NULL,       NULL,       1<<1,          False,        1 },
+	{ "Todoist",  NULL,       NULL,       1<<1,          False,        0 },
 };
 
 /* layout(s) */
