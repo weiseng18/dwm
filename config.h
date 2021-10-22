@@ -154,6 +154,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	/* Actual full screen */
+	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
 	/* scripts */
 	{ Ctrl_M|MODKEY,      XK_l,			spawn,         LOCK       },
 	{ MODKEY,             XK_space, spawn,         ROFI       },
