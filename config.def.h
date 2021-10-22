@@ -40,7 +40,7 @@ static const Rule rules[] = {
 	{ NULL,       NULL,       NULL,          0,          False,       -1 },
 	{ "discord",  NULL,       NULL,       1<<0,          False,        0 },
 	{ "Todoist",  NULL,       NULL,       1<<1,          False,        0 },
-	{ "TelegramDesktop",  NULL,       NULL,       1<<2,          False,        1 },
+	{ "TelegramDesktop",  NULL,       NULL,       1<<5,          False,        1 },
 };
 
 /* layout(s) */
